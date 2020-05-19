@@ -12,26 +12,26 @@ import { Router } from "@angular/router";
 })
 export class NologinGuard implements CanActivate {
 
-  constructor(private AFauth : AngularFireAuth, private router : Router){}
+  constructor(private AFauth: AngularFireAuth, private router: Router) { }
 
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-      return this.AFauth.authState.pipe(map( auth => {
-          
-        if(isNullOrUndefined(auth)){
-          console.log(auth);
-          return true
-        }else{
-          this.router.navigate(['/home'])
-          return false;
-        }
+    return this.AFauth.authState.pipe(map(auth => {
+
+      if (isNullOrUndefined(auth)) {
+        console.log(auth);
+        return true
+      } else {
+        this.router.navigate(['/home'])
+        return false;
+      }
 
       //console.log(auth);
       // return false;
-      }))
+    }))
 
   }
-  
+
 }

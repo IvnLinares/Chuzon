@@ -23,4 +23,8 @@ export class LoginPage implements OnInit {
     }).catch(err => alert('Los datos son incorrectos o no estas registrado'))
   }
 
+  goToSingin(){
+    this.router.navigate(['/singin'])
+  }
+
 }

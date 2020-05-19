@@ -1,0 +1,34 @@
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+
+<ion-content class="bgLight" padding>
+
+  <img class="logo" src="../../../assets/ChuzonLight.png">
+
+  <ion-input class="softInputLight" [(ngModel)]="username" placeholder=" nombre de usuario" type="text"></ion-input>
+  <br>
+
+  <ion-input class="softInputLight" [(ngModel)]="email" placeholder=" e-mail" type="email" inputmode="email"></ion-input>
+  <br>
+
+  <ion-input class="softInputLight" [(ngModel)]="password" placeholder=" contraseña" type="password"></ion-input>
+  <br>
+
+  <ion-input class="softInputLight" placeholder=" confirmar contraseña" type="password"></ion-input>
+  <br>
+
+  <ion-button (click)="onSubmitSingin()" expand="block" class="entrarLight">Registrarse</ion-button>
+   
+  <ion-label class="labelLight1">- O -</ion-label>
+
+  <ion-button class="softButtonLight1"><img class="logoSocial" src="../../../assets/google.png"></ion-button>
+    <ion-button class="softButtonLight2"><img class="logoSocial" src="../../../assets/facebook.png"></ion-button>
+ 
+    <ion-label (click)="goToLogin()"  class="labelLight2">¿Ya tienes cuenta? ¡Inicia Sesion!</ion-label>
+
+</ion-content>

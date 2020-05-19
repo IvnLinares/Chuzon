@@ -1,0 +1,244 @@
+@font-face{
+    font-family: Kabel BD;
+    src: url('../../../assets/fonts/KabelBdNormal.ttf');
+}
+@font-face{
+    font-family: Poppins;
+    src: url('../../../assets/fonts/Poppins/Poppins-Light.ttf')
+}
+
+.bgLight{
+    --background: #F1F3F6;
+}
+
+.bgDark{
+    --background: #333333;
+}
+
+
+.logo{
+    display: block;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.softInputLight{
+    position: relative;
+    width: 80%;
+    height: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+
+    background: #F1F3F6;
+    box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+
+
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 18px;
+    /* identical to box height */
+
+    color: #193EA9;
+
+        }
+
+    .softInputDark{
+        position: relative;
+        width: 80%;
+        height: 8%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 10%;
+       
+        background: #333333;
+        box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+                    
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 18px;
+            /* identical to box height */
+        
+        color: #B3B1B5;
+        
+        }
+
+        .labelLight1{
+            display: block;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+        
+            text-align: center;                    
+        
+            color: #7A7B7C;
+        
+        }
+        
+        .labelDark1{
+            display: block;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+        
+            text-align: center;                    
+        
+            color: #B3B1B5;
+        
+        }
+
+        .softButtonLight1{
+            position: relative;
+            width: 30%;
+            height: 10%;
+            left: 20%;
+            top: 10%;
+        
+            --background: #F1F3F6;
+            --box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+            --border-radius: 25px;
+        }
+        
+        .softButtonDark1{
+            position: relative;
+            width: 30%;
+            height: 10%;
+            left: 20%;
+            top: 10%;
+        
+            --background: #333333;
+            --box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
+            --border-radius: 25px;
+        }
+        
+        .softButtonLight2{
+            position: relative;
+            width: 30%;
+            height: 10%;
+            left: 20%;
+            top: 10%;
+        
+            --background: #F1F3F6;
+            --box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+            --border-radius: 25px;
+        }
+        
+        .softButtonDark2{
+            position: relative;
+            width: 30%;
+            height: 10%;
+            left: 20%;
+            top: 10%;
+        
+            --background: #333333;
+            --box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
+            --border-radius: 25px;
+        }
+        
+        .logoSocial{
+            width: 50px;
+            height: 50px;
+        }
+
+        .labelLight2{
+            display: block;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+        
+            text-align: center;                    
+        
+            color: #7A7B7C;
+        
+        }
+        
+        .labelDark2{
+            display: block;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+        
+            text-align: center;                    
+        
+            color: #B3B1B5;
+        
+        }
+
+        .entrarLight{
+            display: block;
+            width: 30%;
+            height: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20%;
+        
+            --background: #F1F3F6;
+            --box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+            --border-radius: 25px;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-size: 20px;
+            /* identical to box height */
+        
+            text-align: center;
+            color: #193EA9;
+        }
+        
+        .entrarDark{
+            display: block;
+            width: 20%;
+            height: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30%;
+        
+            --background: #333333;
+            --box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
+            --border-radius: 25px;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-size: 20px;
+            /* identical to box height */
+        
+            text-align: center;
+            color: #7A7B7C;
+        }

@@ -69,7 +69,7 @@
 
 .labelLight1{
     display: block;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -214,9 +214,30 @@
 
     font-family: Poppins;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
     /* identical to box height */
 
     text-align: center;
     color: #193EA9;
+}
+
+.entrarDark{
+    display: block;
+    width: 30%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+
+    --background: #333333;
+    --box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
+    --border-radius: 25px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 20px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #7A7B7C;
 }
