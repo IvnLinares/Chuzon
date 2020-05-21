@@ -14,5 +14,4 @@ export class HomePage {
     this.authservice.logout();
   }
 
-
 }

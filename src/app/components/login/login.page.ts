@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from "../../services/auth.service";
 import { Router } from "@angular/router";
+import { auth } from 'firebase';
 
 @Component({
   selector: 'app-login',
@@ -19,6 +20,7 @@ export class LoginPage implements OnInit {
 
   onSubmitLogin(){
     this.authService.login(this.email, this.password).then( res =>{
+      console.log(auth)
       this.router.navigate(['/home'])
     }).catch(err => alert('Los datos son incorrectos o no estas registrado'))
   }
@@ -27,4 +29,7 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/singin'])
   }
 
+  onSubmitInvitado(){
+    this.router.navigate(['/home'])
+  }
 }

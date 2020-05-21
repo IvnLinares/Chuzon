@@ -14,6 +14,7 @@ import  { AngularFireModule } from "@angular/fire"
 
 import { AngularFireAuthModule } from "@angular/fire/auth";
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

@@ -17,7 +17,7 @@
 
 .logo{
     display: block;
-    margin-top: 30%;
+    margin-top: 25%;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -29,7 +29,7 @@
     height: 8%;
     margin-left: auto;
     margin-right: auto;
-    top: 15%;
+    top: 10%;
 
     background: #F1F3F6;
     box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
@@ -206,7 +206,7 @@
     height: 10%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30%;
+    margin-top: 20%;
 
     --background: #F1F3F6;
     --box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
@@ -240,4 +240,44 @@
 
     text-align: center;
     color: #7A7B7C;
+}
+
+.labelInvitado{
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;                    
+
+    color: #7A7B7C;
+
+}
+
+.labelInvitado{
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;                    
+
+    color: #B3B1B5;
+
 }
