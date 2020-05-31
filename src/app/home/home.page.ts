@@ -4,6 +4,7 @@ import { Geolocation } from "@ionic-native/geolocation/ngx";
 
 declare function require(path: string): any;
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+var MapboxGeocoder = require('@mapbox/mapbox-gl-geocoder');
 
 
 @Component({
@@ -60,10 +61,21 @@ export class HomePage implements OnInit{
     mapboxgl.accessToken = 'pk.eyJ1IjoiaXZubGluYXJlcyIsImEiOiJja2FvaTBqbDIyMmY2MnpzMGRqZzRyb3JkIn0.mTqTcA9M8a30hisxJDtM1A';
       var map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/light-v10',
+      style: 'mapbox://styles/mapbox/streets-v11',
       center: [rta.coords.longitude, rta.coords.latitude],
       zoom: 16,
     });
+    map.addControl(
+      new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl,
+      marker: {
+        color: 'orange'
+        },
+      countries: 'sv',
+      })
+      );
+    
       const geolocate = new mapboxgl.GeolocateControl({
         positionOptions: {
             enableHighAccuracy: true
@@ -92,6 +104,7 @@ export class HomePage implements OnInit{
       )
         .addTo(map);
     });
+    
 
     }
     }

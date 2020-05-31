@@ -20,7 +20,15 @@ const routes: Routes = [
   {
     path: 'singin',
     loadChildren: () => import('./components/singin/singin.module').then( m => m.SinginPageModule),canActivate : [NologinGuard]
+  },  {
+    path: 'profile',
+    loadChildren: () => import('./components/profile/profile.module').then( m => m.ProfilePageModule)
   },
+  {
+    path: 'rutas',
+    loadChildren: () => import('./components/rutas/rutas.module').then( m => m.RutasPageModule)
+  },
+
 ];
 
 @NgModule({

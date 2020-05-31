@@ -17,10 +17,10 @@
 
 .logo{
     display: block;
-    margin-top: 25%;
+    margin-top: 0%;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
 }
 
 .softInputLight{
@@ -29,7 +29,7 @@
     height: 8%;
     margin-left: auto;
     margin-right: auto;
-    top: 10%;
+    top: 5%;
 
     background: #F1F3F6;
     box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
@@ -51,7 +51,7 @@
         height: 8%;
         margin-left: auto;
         margin-right: auto;
-        top: 15%;
+        margin-top: 5%;;
        
         background: #333333;
         box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
@@ -206,7 +206,7 @@
     height: 10%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20%;
+    margin-top: 10%;
 
     --background: #F1F3F6;
     --box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
@@ -227,7 +227,7 @@
     height: 10%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30%;
+    margin-top: 5%;
 
     --background: #333333;
     --box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
