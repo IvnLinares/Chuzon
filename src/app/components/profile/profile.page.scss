@@ -1,0 +1,120 @@
+@font-face{
+    font-family: Kabel BD;
+    src: url('../../../assets/fonts/KabelBdNormal.ttf');
+}
+@font-face{
+    font-family: Poppins;
+    src: url('../../../assets/fonts/Poppins/Poppins-Light.ttf')
+}
+
+.bgLight{
+    --background: #F1F3F6;
+}
+
+.bgDark{
+    --background: #333333;
+}
+
+.cartaLightPerfil{
+    background: #F1F3F6;
+    box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.cartaLight{
+    background: #F1F3F6;
+    box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    align-items: center;
+
+    color: #000000;
+}
+
+.avatarLado{
+    width: 50%;
+    height: 50%;
+}
+
+.avatar{
+    border-radius: 100%;
+}
+
+.desconectarseB{
+    box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px
+     rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+
+    --background: #F1F3F6;
+    border-radius: 25px;
+
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #5F82E9;
+}
+
+.placeFavButton{
+    height: 36px;
+
+    --background: #5F82E9;
+    --border-radius: 5px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.helpDevelopersButton{
+    height: 36px;
+    --background: #FF8A35;
+    --border-radius: 5px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
