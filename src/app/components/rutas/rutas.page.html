@@ -5,5 +5,17 @@
 </ion-header>
 
 <ion-content>
+  <ion-item *ngFor="let parada of paradas">
+    <ion-label>
+      <h2><ion-icon name="bus-outline"></ion-icon>{{parada.parada}}</h2>
+      
+      <p><ion-icon name="location-outline"></ion-icon>{{parada.direccion}}</p>
+   
+      <p><ion-icon name="navigate-outline"></ion-icon>{{parada.rutas}}</p>
+    </ion-label>
+      
+    
+     
+  </ion-item>
 
 </ion-content>

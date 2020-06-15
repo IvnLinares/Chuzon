@@ -20,13 +20,18 @@ const routes: Routes = [
   {
     path: 'singin',
     loadChildren: () => import('./components/singin/singin.module').then( m => m.SinginPageModule),canActivate : [NologinGuard]
-  },  {
+  },
+  {
     path: 'profile',
-    loadChildren: () => import('./components/profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () => import('./components/profile/profile.module').then( m => m.ProfilePageModule), canActivate : [AuthGuard]
   },
   {
     path: 'rutas',
-    loadChildren: () => import('./components/rutas/rutas.module').then( m => m.RutasPageModule)
+    loadChildren: () => import('./components/rutas/rutas.module').then( m => m.RutasPageModule), canActivate : [AuthGuard]
+  },
+  {
+    path: 'paradas',
+    loadChildren: () => import('./components/paradas/paradas.module').then( m => m.ParadasPageModule), canActivate : [AuthGuard]
   },
 
 ];

@@ -1,0 +1,176 @@
+@font-face{
+    font-family: Kabel BD;
+    src: url('../../../assets/fonts/KabelBdNormal.ttf');
+}
+@font-face{
+    font-family: Poppins;
+    src: url('../../../assets/fonts/Poppins/Poppins-Light.ttf')
+}
+
+#map { 
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 40%;
+    border-radius: 25px;
+}
+
+#info {
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #222;
+    background: #fff;
+    }
+
+#marker {
+    background-image: url('../../../assets/marker1.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+.bgLight{
+    --background: #F1F3F6;
+}
+
+.bgDark{
+    --background: #333333;
+}
+
+.softInputLight{
+    position: relative;
+    width: 90%;
+    height: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5%;
+
+    background: #F1F3F6;
+    box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 18px;
+    /* identical to box height */
+
+    color: #193EA9;
+
+        }
+
+    .softInputDark{
+        position: relative;
+        width: 80%;
+        height: 8%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 10%;
+       
+        background: #333333;
+        box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+                    
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 18px;
+            /* identical to box height */
+        
+        color: #B3B1B5;
+        
+        }
+
+        .labelLight1{
+            display: block;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+        
+            text-align: center;                    
+        
+            color: #7A7B7C;
+        
+        }
+        
+        .labelDark1{
+            display: block;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+        
+            text-align: center;                    
+        
+            color: #B3B1B5;
+        
+        }
+
+        .entrarLight{
+            display: block;
+            width: 50%;
+            height: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+        
+            --background: #F1F3F6;
+            --box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+            --border-radius: 25px;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-size: 16px;
+            /* identical to box height */
+        
+            text-align: center;
+            color: #193EA9;
+        }
+        
+        .entrarDark{
+            display: block;
+            width: 20%;
+            height: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30%;
+        
+            --background: #333333;
+            --box-shadow: -30px -30px 80px rgba(119, 55, 170, 0.1), 30px 30px 80px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(0, 0, 0, 0.5);
+            --border-radius: 25px;
+        
+            font-family: Poppins;
+            font-style: normal;
+            font-size: 16px;
+            /* identical to box height */
+        
+            text-align: center;
+            color: #7A7B7C;
+        }

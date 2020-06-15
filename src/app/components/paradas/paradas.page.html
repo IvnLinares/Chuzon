@@ -1,0 +1,28 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Registro de paradas</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="bgLight" padding>
+
+  <div id="map"></div>
+  <ion-label id="info">Coords</ion-label>
+
+  <ion-input class="softInputLight" [(ngModel)]="parada" placeholder="Parada" type="text"></ion-input>
+  <br>
+
+  <ion-input class="softInputLight" [(ngModel)]="direccion" placeholder="Direccion" type="text"></ion-input>
+  <br>
+
+  <ion-input class="softInputLight" [(ngModel)]="rutas" placeholder="Rutas" type="text"></ion-input>
+  <br>
+
+  <ion-input class="softInputLight" [(ngModel)]="coords" placeholder="Coordenadas" type="text"></ion-input>
+  <br>
+
+  <ion-button (click)="onSubmitRegisterParada()" expand="block" class="entrarLight">Registrar Parada</ion-button>
+   
+  <ion-label class="labelLight1" (click)="cancelar()">Cancelar</ion-label>
+
+</ion-content>

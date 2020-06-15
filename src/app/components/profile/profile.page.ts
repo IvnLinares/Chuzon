@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from "../../services/auth.service";
+import { Router } from "@angular/router";
+
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-profile',
@@ -8,13 +11,39 @@ import { AuthService } from "../../services/auth.service";
 })
 export class ProfilePage implements OnInit {
 
-  constructor(public authservice : AuthService) { }
+  constructor(public authservice : AuthService, public router : Router, public alertController : AlertController) { }
 
   OnLogout(){
     this.authservice.logout();
   }
   
   ngOnInit() {
+  }
+
+  async addParada(){
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: '¿Deseas agregar una parada?',
+      message: 'Tu peticion de nueva parada esperará ser confirmada',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: () => {
+            console.log('Confirm Cancel');
+          }
+        }, {
+          text: 'Agregar parada',
+          handler: () => {
+            this.router.navigate(['/paradas'])
+            console.log('Confirm Okay');
+          }
+        }
+      ]
+    });
+
+    await alert.present();
   }
 
 }

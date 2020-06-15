@@ -1,6 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from "../services/auth.service";
 import { Geolocation } from "@ionic-native/geolocation/ngx";
+import { FirebaseService } from "../services/firebase.service";
+
+export interface parada {
+  id: string;
+  parada: string;
+  direccion : string;
+  coords : string;
+  rutas : string;
+
+}
 
 declare function require(path: string): any;
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
@@ -14,7 +24,9 @@ var MapboxGeocoder = require('@mapbox/mapbox-gl-geocoder');
 })
 export class HomePage implements OnInit{
 
-  constructor(public authservice : AuthService, private geolacation : Geolocation) {}
+  public paradas : any = [];
+
+  constructor(public authservice : AuthService, private geolacation : Geolocation, private db : FirebaseService) {}
 
   OnLogout(){
     this.authservice.logout();
@@ -22,6 +34,16 @@ export class HomePage implements OnInit{
 
   ngOnInit(){
     this.loadMap();
+
+    this.db.leerParada().subscribe( paradas => {
+      paradas.map( parada => {
+
+        const data : parada = parada.payload.doc.data() as parada;
+          data.id = parada.payload.doc.id;
+          
+          this.paradas.push(data);
+      })
+    })
   }
 
  async loadMap(){
@@ -38,11 +60,11 @@ export class HomePage implements OnInit{
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [-89.71367190000002, 13.7652114]
+          coordinates: [-89.7213158, 13.728976]
         },
         properties: {
-          title: 'Mapbox',
-          description: 'Washington, D.C.'
+          title: '{{parada.parada}}',
+          description: 'Avenida Morazan, frente al Diver'
         }
       },
       {

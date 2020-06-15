@@ -13,14 +13,14 @@ import { Geolocation } from '@ionic-native/geolocation/ngx'
 
 import { firebaseConfig } from "../environments/environment";
 import  { AngularFireModule } from "@angular/fire"
-
+import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(firebaseConfig), AngularFireAuthModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(firebaseConfig), AngularFirestoreModule, AngularFireAuthModule], 
   providers: [
     StatusBar,
     Geolocation,
