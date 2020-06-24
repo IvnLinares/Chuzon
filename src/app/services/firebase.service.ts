@@ -11,13 +11,14 @@ export class FirebaseService {
 
   constructor( private db: AngularFirestore,  private router: Router) { }
 
-  nuevaParada(parada: string, direccion: string, coords: string, rutas : string) {
+  nuevaParada(parada: string, direccion: string, lat: string, lng: string, rutas : string) {
 
     return new Promise<any>((resolve, reject) => {
       this.db.collection('paradas').add({
         parada: parada,
         direccion : direccion,
-        coords : coords,
+        lng : lng,
+        lat : lat,
         rutas : rutas
       })
       .then(

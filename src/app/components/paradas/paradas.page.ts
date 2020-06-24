@@ -16,7 +16,8 @@ export class ParadasPage implements OnInit {
 
   public parada: string;
   public direccion : string;
-  public coords : string;
+  public lng : string;
+  public lat: string;
   public rutas : string;
 
 
@@ -62,7 +63,7 @@ export class ParadasPage implements OnInit {
     }
 
     onSubmitRegisterParada(){
-      this.db.nuevaParada(this.parada, this.direccion, this.coords, this.rutas).then (db => { console.log(db)
+      this.db.nuevaParada(this.parada, this.direccion, this.lng, this.lat, this.rutas).then (db => { console.log(db)
       }).catch(err => console.log(err))
       
       this.router.navigate(['/profile'])
