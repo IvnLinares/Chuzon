@@ -6,9 +6,6 @@
 
 <ion-content class="bgLight" padding>
 
-  <div id="map"></div>
-  <ion-label id="info">Coords</ion-label>
-
   <ion-input class="softInputLight" [(ngModel)]="parada" placeholder="Parada" type="text"></ion-input>
   <br>
 
@@ -18,7 +15,10 @@
   <ion-input class="softInputLight" [(ngModel)]="rutas" placeholder="Rutas" type="text"></ion-input>
   <br>
 
-  <ion-input class="softInputLight" [(ngModel)]="coords" placeholder="Coordenadas" type="text"></ion-input>
+  <ion-input class="softInputLight" [(ngModel)]="lng" placeholder="Longitud" type="text"></ion-input>
+  <br>
+
+  <ion-input class="softInputLight" [(ngModel)]="lat" placeholder="Latitud" type="text"></ion-input>
   <br>
 
   <ion-button (click)="onSubmitRegisterParada()" expand="block" class="entrarLight">Registrar Parada</ion-button>

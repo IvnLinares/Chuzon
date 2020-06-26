@@ -5,7 +5,8 @@ interface parada {
   id: string;
   parada: string;
   direccion : string;
-  coords : string;
+  lat : string;
+  lng : string;
   rutas : string;
 
 }

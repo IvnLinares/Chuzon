@@ -7,16 +7,16 @@ import { Router } from "@angular/router";
 })
 export class FirebaseService {
 
-  collectionName = "Paradas";
+  collectionName = "paradas";
 
   constructor( private db: AngularFirestore,  private router: Router) { }
 
-  nuevaParada(parada: string, direccion: string, lat: string, lng: string, rutas : string) {
+  nuevaParada(parada: string, direccion: string, lng: string, lat: string, rutas : string) {
 
     return new Promise<any>((resolve, reject) => {
       this.db.collection('paradas').add({
         parada: parada,
-        direccion : direccion,
+        direccion : direccion, 
         lng : lng,
         lat : lat,
         rutas : rutas
@@ -29,8 +29,7 @@ export class FirebaseService {
     }
 
     leerParada(){
-      return this.db.collection('paradas').snapshotChanges();
-      
+      return this.db.collection('paradas').snapshotChanges(); 
     }
     
 }

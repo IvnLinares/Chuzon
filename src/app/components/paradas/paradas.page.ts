@@ -3,10 +3,6 @@ import { FirebaseService } from "../../services/firebase.service";
 import { Geolocation } from "@ionic-native/geolocation/ngx";
 import { Router } from "@angular/router";
 
-declare function require(path: string): any;
-var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
-var MapboxGeocoder = require('@mapbox/mapbox-gl-geocoder');
-
 @Component({
   selector: 'app-paradas',
   templateUrl: './paradas.page.html',
@@ -37,24 +33,6 @@ export class ParadasPage implements OnInit {
     
     console.log(myLngLat)
 
-    mapboxgl.accessToken = 'pk.eyJ1IjoiaXZubGluYXJlcyIsImEiOiJja2FvaTBqbDIyMmY2MnpzMGRqZzRyb3JkIn0.mTqTcA9M8a30hisxJDtM1A';
-      var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [rta.coords.longitude, rta.coords.latitude],
-      zoom: 16,
-    });
-
-    map.on('click', function(e) {
-
-      new mapboxgl.Marker({container: 'marker'})
-      .setLngLat(e.lngLat.wrap())
-      .addTo(map);
-      
-      document.getElementById('info').innerHTML = 
-      (e.lngLat.wrap());
-      
-      });
       
   }
 

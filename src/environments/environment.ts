@@ -7,14 +7,14 @@ export const environment = {
 };
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyAbqY95J8DQWq46GB3WJB_fu1y5VzkGhGE",
-  authDomain: "chuzon-5b611.firebaseapp.com",
-  databaseURL: "https://chuzon-5b611.firebaseio.com",
-  projectId: "chuzon-5b611",
-  storageBucket: "chuzon-5b611.appspot.com",
-  messagingSenderId: "611452272849",
-  appId: "1:611452272849:web:33f33206289f99beb585f0",
-  measurementId: "G-TKTQR35V3Y"
+  apiKey: "AIzaSyASNxgnaAA7_zhGDsdCWtK7tELa4m0clfY",
+    authDomain: "chuzon-2b650.firebaseapp.com",
+    databaseURL: "https://chuzon-2b650.firebaseio.com",
+    projectId: "chuzon-2b650",
+    storageBucket: "chuzon-2b650.appspot.com",
+    messagingSenderId: "309166396202",
+    appId: "1:309166396202:web:3f862108a6aeee22520453",
+    measurementId: "G-JTDGYM6SL3"
 };
 /*
  * For easier debugging in development mode, you can import the following file

@@ -59,12 +59,16 @@ export class HomePage implements OnInit{
     this.map = L.map('map', {
       center: myLngLat,
       zoom: 16
-    }
-     
+    } 
+         
     );
-    const markers = L.marker(myLngLat).addTo(this.map)
-
     
+    for(let parada of this.paradas){
+      var lat = ('{{parada.lat}}');
+      var lng = ('{{parata.lng}}')
+    }
+    
+    const markers = L.marker(myLngLat).addTo(this.map)
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
