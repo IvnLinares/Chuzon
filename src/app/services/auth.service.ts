@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from "@angular/fire/auth";
 import { Router } from "@angular/router";
 import { AngularFirestore } from "@angular/fire/firestore";
+import { auth } from 'firebase';
 
 @Injectable({
   providedIn: 'root'
@@ -44,6 +45,20 @@ export class AuthService {
       }).catch(err => reject(err))
     })
 
+  }
+
+  GoogleAuth(){
+    return this.AuthLogin(new auth.GoogleAuthProvider());
+  }
+
+  AuthLogin(provider){
+    return this.AFauth.signInWithPopup(provider)
+    .then((result) => {
+      console.log('Has iniciado sesion correctamente')
+    }).catch((error) => {
+      console.log('error')
+    }
+    )
   }
 
 }

@@ -45,30 +45,28 @@ export class HomePage implements OnInit{
           this.paradas.push(data);
       })
     })
-  }
 
+    
+  }
 
  async loadMap(){
     const rta = await this.geolacation.getCurrentPosition();
     const myLngLat = {
-      lat: rta.coords.latitude,
-      lng: rta.coords.longitude,
+      lat : rta.coords.latitude,
+      lng : rta.coords.longitude
+     
     };
     console.log(myLngLat)
 
     this.map = L.map('map', {
       center: myLngLat,
       zoom: 16
-    } 
-         
+    }     
     );
-    
-    for(let parada of this.paradas){
-      var lat = ('{{parada.lat}}');
-      var lng = ('{{parata.lng}}')
-    }
-    
+         
     const markers = L.marker(myLngLat).addTo(this.map)
+    markers.bindPopup('prueba').openPopup();
+    
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
