@@ -4,6 +4,8 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -12,7 +14,9 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCY6yxUzxs5xxBpdX0jvN7livb08_YqCBU',})
   ],
   declarations: [HomePage]
 })

@@ -14,8 +14,23 @@
   
    
 
- 
-    <div id="map"></div>
+ <agm-map
+   [style.height.px]="height"
+   [latitude]="lat"
+   [longitude]="lng"
+   [zoom]="13">
+
+     <agm-marker *ngFor="let parada of paradas" [latitude]="parada.lat" [longitude]="parada.lng">
+     <agm-info-window>
+      <h2><ion-icon name="location-outline"></ion-icon> {{parada.parada}}</h2>
+      
+      <p><ion-icon name="navigate-outline"></ion-icon> {{parada.direccion}}</p>
+   
+      <p><ion-icon name="bus-outline"></ion-icon> {{parada.rutas}}</p>
+
+  </agm-info-window>
+    </agm-marker>
+  </agm-map>
   
 
 </ion-content>

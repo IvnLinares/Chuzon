@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from "../services/auth.service";
 import { Geolocation } from "@ionic-native/geolocation/ngx";
 import { FirebaseService } from "../services/firebase.service";
-import * as L from 'leaflet';
-import { title } from 'process';
 
 export interface parada {
   id: string;
@@ -15,7 +13,7 @@ export interface parada {
 }
 
 declare function require(path: string): any;
-
+declare var google;
 
 @Component({
   selector: 'app-home',
@@ -23,6 +21,11 @@ declare function require(path: string): any;
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit{
+
+   rta = this.geolacation.getCurrentPosition();
+  title: string = 'My first AGM project';
+  lat: number = 0;
+  lng: number = 0;
 
   private map;
   public paradas : any = [];
@@ -51,30 +54,8 @@ export class HomePage implements OnInit{
 
  async loadMap(){
     const rta = await this.geolacation.getCurrentPosition();
-    const myLngLat = {
-      lat : rta.coords.latitude,
-      lng : rta.coords.longitude
-     
-    };
-    console.log(myLngLat)
-
-    this.map = L.map('map', {
-      center: myLngLat,
-      zoom: 16
-    }     
-    );
-         
-    const markers = L.marker(myLngLat).addTo(this.map)
-    markers.bindPopup('prueba').openPopup();
-    
-    const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    });
-    
-    tiles.addTo(this.map);
-    }
-   
-   
-    }
+    this.lat = rta.coords.latitude,
+    this.lng = rta.coords.longitude
+  }
  
+  }
