@@ -32,4 +32,11 @@ export class LoginPage implements OnInit {
   onSubmitInvitado(){
     this.router.navigate(['/home'])
   }
+
+  onSubmitGoogle(){
+    this.authService.GoogleAuth().then( res => {
+      console.log(auth)
+      this.router.navigate(['/home'])
+    }).catch( err => alert ('No se pudo registrar'))
+  }
 }
