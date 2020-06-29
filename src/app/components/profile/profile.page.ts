@@ -11,6 +11,10 @@ import { AlertController } from '@ionic/angular';
 })
 export class ProfilePage implements OnInit {
 
+  name: string;
+  photo: string;
+  email: string;
+
   constructor(public authservice : AuthService, public router : Router, public alertController : AlertController) { }
 
   OnLogout(){
@@ -18,6 +22,11 @@ export class ProfilePage implements OnInit {
   }
   
   ngOnInit() {
+    this.authservice.getUserAuth().subscribe( user => {
+      this.name = user.displayName;
+      this.photo = user.photoURL;
+      this.email = user.email;
+    })
   }
 
   async addParada(){
@@ -45,5 +54,7 @@ export class ProfilePage implements OnInit {
 
     await alert.present();
   }
+
+
 
 }

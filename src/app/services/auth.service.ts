@@ -3,13 +3,14 @@ import { AngularFireAuth } from "@angular/fire/auth";
 import { Router } from "@angular/router";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { auth } from 'firebase';
+import { Platform } from '@ionic/angular';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private AFauth: AngularFireAuth, private router: Router, private db: AngularFirestore) { }
+  constructor(private AFauth: AngularFireAuth, private router: Router, private db: AngularFirestore, public platform: Platform) { }
 
   login(email: string, password: string) {
 
@@ -61,4 +62,11 @@ export class AuthService {
     )
   }
 
+  FacebookAuth(){
+    this.AFauth.signInWithPopup(new this.FacebookAuth)
+  }
+
+  getUserAuth(){
+    return this.AFauth.authState
+  }
 }
