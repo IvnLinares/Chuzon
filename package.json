@@ -2,7 +2,7 @@
   "name": "chuzon",
   "version": "0.0.1",
   "author": "IvnLinares",
-  "homepage": "https://ionicframework.com/",
+  "homepage": "https://github.com/IvnLinares",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -65,5 +65,5 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
-  "description": "An Ionic project"
+  "description": "Aplicacion movil de rutas y paradas de buses en El Salvador"
 }

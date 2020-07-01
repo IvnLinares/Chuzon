@@ -32,4 +32,7 @@ export class FirebaseService {
       return this.db.collection('paradas').snapshotChanges(); 
     }
     
+    leerPerfil(){
+      return this.db.collection('users').snapshotChanges();
+    }
 }

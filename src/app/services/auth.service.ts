@@ -39,6 +39,7 @@ export class AuthService {
 
         this.db.collection('users').doc(uid).set({
           username: username,
+          email : email,
           uid: uid
         })
 
@@ -62,9 +63,7 @@ export class AuthService {
     )
   }
 
-  FacebookAuth(){
-    this.AFauth.signInWithPopup(new this.FacebookAuth)
-  }
+ 
 
   getUserAuth(){
     return this.AFauth.authState
