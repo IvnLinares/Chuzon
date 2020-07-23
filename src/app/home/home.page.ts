@@ -3,6 +3,7 @@ import { AuthService } from "../services/auth.service";
 import { Geolocation } from "@ionic-native/geolocation/ngx";
 import { FirebaseService } from "../services/firebase.service";
 
+
 export interface parada {
   id: string;
   parada: string;
@@ -30,13 +31,15 @@ export class HomePage implements OnInit{
   private map;
   public paradas : any = [];
 
-  constructor(public authservice : AuthService, private geolacation : Geolocation, private db : FirebaseService) {}
+  constructor(public authservice : AuthService, private geolacation : Geolocation, private db : FirebaseService,) {}
 
   OnLogout(){
     this.authservice.logout();
   }
 
-  ngOnInit(){
+  async ngOnInit(){
+  alert('Activa la Ubicacion para acceder al mapa')
+  
     this.loadMap();
 
     this.db.leerParada().subscribe( paradas => {
