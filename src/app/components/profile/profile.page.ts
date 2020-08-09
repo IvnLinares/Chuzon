@@ -5,7 +5,6 @@ import { Router } from "@angular/router";
 import { FirebaseService } from "../../services/firebase.service";
 
 import { AlertController } from '@ionic/angular';
-import { userInfo } from 'os';
 
 interface user {
   id: string;
