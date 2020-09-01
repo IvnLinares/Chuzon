@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from "../../services/firebase.service";
-
+import { Router } from "@angular/router";
 interface parada {
   id: string;
   parada: string;
@@ -20,7 +20,7 @@ export class RutasPage implements OnInit {
 
   public paradas : any = [];
 
-  constructor(private db : FirebaseService) {}
+  constructor(private db : FirebaseService, public router : Router) {}
 
   ngOnInit() {
 
@@ -35,4 +35,7 @@ export class RutasPage implements OnInit {
     })
   }
 
+   goToMap(){
+     this.router.navigate(['/home'])
+   }
 }

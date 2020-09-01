@@ -4,9 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_transparent"
+    android:backgroundTint="@color/ic_launcher_background"
+    android:backgroundTintMode="screen"
+    android:fadingEdge="@string/app_name"
+    android:scrollbarThumbHorizontal="@drawable/ic_launcher_background"
+    android:scrollbarThumbVertical="@drawable/ic_launcher_background"
+    android:scrollbarTrackHorizontal="@drawable/ic_launcher_background"
+    android:scrollbarTrackVertical="@drawable/ic_launcher_background"
+    android:touchscreenBlocksFocus="false"
     tools:context=".MainActivity">
 
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <TextView android:id="@+id/imageView2" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

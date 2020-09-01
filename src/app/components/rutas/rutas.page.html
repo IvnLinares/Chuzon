@@ -1,23 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>rutas</ion-title>
+    <ion-title>Paradas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-item *ngFor="let parada of paradas">
-    <ion-label>
-      <h2><ion-icon name="bus-outline"></ion-icon>{{parada.parada}}</h2>
+<ion-content class="bgLight">
+  
+  <ion-item class="cartaLightPerfil" *ngFor="let parada of paradas" (click)="goToMap()">
+
+    <ion-label class="letra">
+      <h2><ion-icon name="bus-outline"></ion-icon> {{parada.parada}}</h2>
       
-      <p><ion-icon name="location-outline"></ion-icon>{{parada.direccion}}</p>
+      <p><ion-icon name="location-outline"></ion-icon> {{parada.direccion}}</p>
    
-      <p><ion-icon name="navigate-outline"></ion-icon>{{parada.rutas}}</p>
+      <p><ion-icon name="navigate-outline"></ion-icon> {{parada.rutas}}</p>
+    </ion-label>     
 
-      <p><ion-icon name="navigate-outline"></ion-icon>{{parada.lng}}, {{parada.lat}}</p>
-    </ion-label>
-      
-    
-     
-  </ion-item>
-
+</ion-item>
 </ion-content>

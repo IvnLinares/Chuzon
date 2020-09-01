@@ -34,26 +34,11 @@ export class ProfilePage implements OnInit {
   
   ngOnInit() {
 
-    this.db.leerPerfil().subscribe( usuario => {
-     usuario.map( usuario => {
-
-        const data : user = usuario.payload.doc.data() as user;
-          data.id = usuario.payload.doc.id;
-          
-          this.usuario.push(data);
-
-         
-          this.photo = '../../../assets/unnamed.png'
-
-          console.log(data.email)
-          console.log(this.authservice.getUserAuth)
-      })
-      
-    })
+    
 
     this.authservice.getUserAuth().subscribe( user => {
       this.name = user.displayName;
-      this.photo = user.photoURL;
+      this.photo = '../../../assets/unnamed.png';
       this.email = user.email;
     })
   }

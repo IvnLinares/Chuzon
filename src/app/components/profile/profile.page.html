@@ -11,8 +11,8 @@
     </ion-card-header>
   
     <ion-card-content>
-     <ion-card-title>{{name}}</ion-card-title>
-     <ion-card-subtitle>{{email}}</ion-card-subtitle>
+     <ion-card-title>{{email}}</ion-card-title>
+     <ion-card-subtitle>{{name}}</ion-card-subtitle>
       <br>
      <ion-button (click)="OnLogout()" class="desconectarseB">Desconectarse</ion-button>
     </ion-card-content>
@@ -20,52 +20,25 @@
 
   <ion-card class="cartaLight">
     <ion-card-header>Proximamente...</ion-card-header>
+    <ion-card-content>Tus paradas favoritas</ion-card-content>
   </ion-card>
 
-  <!-- <ion-card class="cartaLight">
-    <ion-card-header>
-      <center>
-      <ion-card-title>Destinos Favoritos</ion-card-title>
-      </center>
-    </ion-card-header>
-
-    <ion-card-content>
-     
-          <ion-col><ion-button class="placeFavButton">Cafe</ion-button></ion-col>
-          <ion-col><ion-button class="placeFavButton">Casa</ion-button></ion-col>
-          <ion-col><ion-button class="placeFavButton">Trabajo</ion-button></ion-col>
-       
-    </ion-card-content>
-  </ion-card> -->
-
   <ion-card class="cartaLight">
+    <ion-card-header>Proximamente...</ion-card-header>
+    <ion-card-content>Mas Caracteristicas</ion-card-content>
+  </ion-card>
+
+
+<ion-card class="cartaLight">
     <ion-card-header>
       <center>
       <ion-card-title>Apoya a los desarrolladores</ion-card-title>
       </center>
     </ion-card-header>
     <ion-card-content>
-      <!-- <ion-button class="helpDevelopersButton" (click)="addParada()">Agrega una parada</ion-button> -->
+      <ion-button class="helpDevelopersButton" (click)="addParada()">Agrega una parada</ion-button> -->
       <ion-button class="helpDevelopersButton">Invitanos a un cafe</ion-button>
     </ion-card-content>
   </ion-card>
-<!-- 
-  <ion-card class="cartaLight">
-    <ion-card-header>
-      <center>
-      <ion-card-title>Configuracion</ion-card-title>
-      </center>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>
-         <ion-col><ion-button class="placeFavButton">Cafe</ion-button></ion-col>
-          <ion-col><ion-button class="placeFavButton">Casa</ion-button></ion-col> 
-        </ion-row>
-      </ion-grid>
-      <ion-button class="helpDevelopersButton">Agrega una parada</ion-button>
-      <ion-button class="helpDevelopersButton">Invitanos a un cafe</ion-button> 
-    </ion-card-content>
-  </ion-card> -->
 
 </ion-content>

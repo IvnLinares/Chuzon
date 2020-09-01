@@ -7,14 +7,15 @@ import { Router } from "@angular/router";
 })
 export class FirebaseService {
 
-  collectionName = "paradas";
+  collectionName = "paradas, suggested"
+ 
 
   constructor( private db: AngularFirestore,  private router: Router) { }
 
   nuevaParada(parada: string, direccion: string, lng: string, lat: string, rutas : string) {
 
     return new Promise<any>((resolve, reject) => {
-      this.db.collection('paradas').add({
+      this.db.collection('suggested').add({
         parada: parada,
         direccion : direccion, 
         lng : lng,

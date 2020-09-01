@@ -1,0 +1,43 @@
+@font-face{
+    font-family: Kabel BD;
+    src: url('../../../assets/fonts/KabelBdNormal.ttf');
+}
+@font-face{
+    font-family: Poppins;
+    src: url('../../../assets/fonts/Poppins/Poppins-Light.ttf')
+}
+
+.bgLight{
+    --background: #F1F3F6;
+}
+
+.bgDark{
+    --background: #333333;
+}
+
+
+.cartaLight{
+    background: #F1F3F6;
+    box-shadow: -30px -30px 80px rgba(255, 255, 255, 0.1), 30px 30px 80px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+
+    /* identical to box height */
+
+    align-items: center;
+
+    color: #000000;
+}
+
+ion-icon{
+    color: #5F82E9;
+}
+
+.letra{
+    color: black;
+}
